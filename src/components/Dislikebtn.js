@@ -1,9 +1,16 @@
-import react from "react";
+import react, {useState} from "react";
 
 function DislikeBtn() {
+    const [dislike, setDislike] = useState(0)
+
+    function handleDislike() {
+      setDislike(dislike + 1)
+    }
+
     return(
         <div>
-            im the dislike button
+            <button onClick={handleDislike} >Dislike?</button>
+            <p>{dislike}</p>
         </div>
     )
 }
