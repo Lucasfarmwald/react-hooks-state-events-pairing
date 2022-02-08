@@ -1,9 +1,9 @@
 import react from "react";
 
-function Details() {
+function Details(props) {
     return(
         <div>
-            I will hold the title
+           <td>{props.title}</td>
         </div>
     )
 }

@@ -8,6 +8,10 @@ import Details from "./Details.js";
 function App() {
   console.log("Here's your data:", video);
 
+  
+
+  
+
   return (
     <div className="App">
       <iframe
@@ -19,10 +23,10 @@ function App() {
         title="Thinking in React"
 
       />
-      <Details />
-      <Comments />
-      <LikeBtn />
-      <DislikeBtn />
+      <Details title={video.title} views={video.views}  />
+      <Comments  />
+      <LikeBtn upvotes={video.upvotes} />
+      <DislikeBtn downvotes={video.downvotes} />
     </div>
   );
 }

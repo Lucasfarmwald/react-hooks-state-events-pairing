@@ -1,21 +1,15 @@
 import react, {useState} from "react";
 
-function LikeBtn() {
-    const [likes, setLikes] = useState(0);
+function LikeBtn(props) {
+    const [likes, setLike] = useState(props.upvotes)
 
-    function handleLikes() {
-        setLikes( () => likes +1 )
-    }
-
-
-
+function handleLikes() {
+       setLike( () => likes + 1)     
+}
     return(
         <div>
-            
-            <button onClick={handleLikes}>Like?</button>
+            <button onClick={handleLikes}>Upvote</button>
             <p>{likes}</p>
-
-            
         </div>
     )
 }

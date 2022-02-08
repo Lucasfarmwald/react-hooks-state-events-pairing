@@ -1,13 +1,14 @@
 import react from "react";
 
-function Comments() {
+
+function Comments(props) {
+
     
-     
 
     return(
         <div>
            
-           hey
+        <p>{}</p>
            
         </div>
     )
