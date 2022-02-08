@@ -3,7 +3,7 @@ import react from "react";
 function Comments() {
     return(
         <h1>
-            hello there
+            get rick rolled
         </h1>
     )
 }

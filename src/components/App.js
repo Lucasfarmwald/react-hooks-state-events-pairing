@@ -1,4 +1,7 @@
 import video from "../data/video.js";
+import Comments from "./Comments.js";
+import LikeBtn from "./Likebtn.js";
+import DislikeBtn from "./Dislikebtn.js";
 
 function App() {
   console.log("Here's your data:", video);
@@ -12,7 +15,11 @@ function App() {
         frameBorder="0"
         allowFullScreen
         title="Thinking in React"
+
       />
+      <Comments />
+      <LikeBtn />
+      <DislikeBtn />
     </div>
   );
 }
