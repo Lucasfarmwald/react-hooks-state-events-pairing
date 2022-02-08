@@ -2,6 +2,8 @@ import video from "../data/video.js";
 import Comments from "./Comments.js";
 import LikeBtn from "./Likebtn.js";
 import DislikeBtn from "./Dislikebtn.js";
+import Details from "./Details.js";
+
 
 function App() {
   console.log("Here's your data:", video);
@@ -17,6 +19,7 @@ function App() {
         title="Thinking in React"
 
       />
+      <Details />
       <Comments />
       <LikeBtn />
       <DislikeBtn />
